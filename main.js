@@ -32,3 +32,10 @@ showWeatherData = (weatherData) => {
   document.getElementById("min-temp").innerText = weatherData.main.temp_min;
   document.getElementById("max-temp").innerText = weatherData.main.temp_max;
 };
+
+const body = document.querySelector("body");
+const toggle = document.getElementById("toggle")
+toggle.onclick = function() {
+  toggle.classList.toggle("active")
+  body.classList.toggle("active")
+};

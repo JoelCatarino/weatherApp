@@ -18,13 +18,19 @@
   </head>
   <body>
     <main>
-      <div class="location">
-        <h1 class="location-timezone">Weather App</h1>
+      <div id="toggle">
+        <i class="indicator"></i>
       </div>
-      <input type="text" class="form-control form-control-lg" id="city-input" />
-      
       <div class="row">
-        <button class="btn btn-lg p-4" onclick="searchCity()" type="button">
+        <div class="location">
+          <h1 class="location-timezone text-white">Weather App</h1>
+        </div>
+      </div>
+
+      <input type="text" class="form-control form-control-lg" id="city-input" />
+
+      <div class="row">
+        <button class="btn btn-lg p-4 text-white" onclick="searchCity()" type="button">
           Search
         </button>
       </div>
@@ -32,11 +38,11 @@
         <div class="card-deck mb-3 text-center">
           <div class="card mb-4 shadow-sm"></div>
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" id="city-name">----</h4>
+            <h4 class="my-0 font-weight-normal text-white" id="city-name">----</h4>
           </div>
-          <div class="card-body">
-            <h1 class="card-title" id="weather-type"></h1>
-            <ul class="list-unstyled mt-3 mb-4">
+          <div class="card-body text-white">
+            <h1 class="card-title " id="weather-type"></h1>
+            <ul class="list-unstyled mt-3 mb-4 text-white">
               <li>Temp: <span id="temp">--</span>c</li>
               <li>Min Temp: <span id="min-temp">--</span>c</li>
               <li>Man Temp: <span id="max-temp">--</span>c</li>
@@ -44,8 +50,7 @@
           </div>
         </div>
       </div>
-
     </main>
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>

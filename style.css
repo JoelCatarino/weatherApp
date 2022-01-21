@@ -1,8 +1,10 @@
+/*    MAIN    */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Neonderthaw', cursive;
+  font-family: "Neonderthaw", cursive;
 }
 
 body {
@@ -11,12 +13,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgb(12, 64, 107), rgb(102, 166, 218));
+  background: linear-gradient(rgb(0, 11, 20), rgb(60, 78, 93));
   color: #f0f0f0;
+  transition: 0.5s;
 }
 
-.btn {
-  border: solid 1px #000;
+body.active {
+  background: linear-gradient(rgb(12, 64, 107), rgb(102, 166, 218));
+}
+
+/*    CONTENT    */
+
+.location-timezone {
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .location {
@@ -26,7 +36,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 
 .degree-section {
   display: flex;
@@ -44,4 +53,43 @@ body {
 
 .card-title {
   border-radius: 50px;
+}
+
+/*    TOGGLE BTN    */
+
+#toggle {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #000;
+  transition: 0.25;
+  box-shadow: insert 0 8px 60px rgba(0, 0, 0, 0.1),
+    insert 0 8px 8px rgba(0, 0, 0, 0.1), insert 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active {
+  background: #f0f0f0;
+  box-shadow: inset 2 2px;
+}
+
+#toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: insert 0 8px 40px rgba(0, 0, 0, 0.1),
+    insert 0 4px 4px rgba(225, 225, 225, 0.1),
+    insert 0 -4px 4px rgba(225, 225, 225, 0.1);
+  transition: 0.5s;
+}
+
+#toggle.active .indicator {
+  left: 25px;
 }
