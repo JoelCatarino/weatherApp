@@ -9,7 +9,7 @@
 <br>
 
 
-## 🚀 Tecnologias
+## 🚀 Tec
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -17,6 +17,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
-## 💻 Projeto
+## 💻 Project
 
 The Weather app is a simple application that allows you to access any weather information from the world.
